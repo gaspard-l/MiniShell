@@ -28,7 +28,7 @@ int main()
             continue;
 
         //Execution des commandes externes (ls, mkdir)
-        run_commande(argv);
+        commande_externe(argv);
     }
     return 0;
 }

@@ -1,6 +1,6 @@
 #include "shell.h"
 
-void run_commande(char *argv[])
+void commande_externe(char *argv[])
 {
     //Execution des commandes internes (ls, mkdir)
     pid_t pid = fork();

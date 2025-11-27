@@ -24,7 +24,7 @@ MiniShell est un shell simplifié écrit en C, qui permet d’exécuter des comm
 ==============================
 
 >user : ls
-main.c  parser.c  README.md  shell.h
+main.c  parse.c  README.md  shell.h commande_interne.c commande_externe.c
 
 >user : cd src
 
@@ -43,14 +43,14 @@ minishell/
 ├── main.c              # Boucle principale, lecture des commandes
 ├── parse.c             # Fonction de découpage de la ligne en tokens
 ├── commande_interne.c  # Gestion des commandes internes (cd, exit)
-├── run_commande.c      # Exécution des commandes externes (fork + exec)
+├── commande_externe.c  # Exécution des commandes externes (fork + exec)
 └── shell.h             # Déclarations des fonctions et constantes
 ```
 ---
 
 ## Compilation
 
-gcc -Wall -Wextra -o minishell main.c parse.c commande_interne.c run_commande.c
+gcc -Wall -Wextra -o minishell main.c parse.c commande_interne.c commande_externe.c
 
 ---
 

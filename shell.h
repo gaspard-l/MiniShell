@@ -13,6 +13,6 @@
 
 int parse(char *input, char *argv[]);
 int commande_interne(int argc, char *argv[]);
-void run_commande(char *argv[]);
+void commande_externe(char *argv[]);
 
 #endif
