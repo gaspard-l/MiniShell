@@ -45,12 +45,14 @@ minishell/
 - run_commande.c     # Exécution des commandes externes (fork + exec)
 - shell.h            # Déclarations des fonctions et constantes
 
+```plaintext
 minishell/
 ├── main.c              # Boucle principale, lecture des commandes
 ├── parse.c             # Fonction de découpage de la ligne en tokens
 ├── commande_interne.c  # Gestion des commandes internes (cd, exit)
 ├── run_commande.c      # Exécution des commandes externes (fork + exec)
 └── shell.h             # Déclarations des fonctions et constantes
+```
 
 ---
 
