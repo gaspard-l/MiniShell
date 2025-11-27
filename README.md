@@ -35,7 +35,7 @@ main.c  parser.c  README.md  shell.h
 
 Fin d'execution.
 
-
+```
 ## Structure du projet
 
 minishell/
