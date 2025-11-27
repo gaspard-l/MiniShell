@@ -37,28 +37,34 @@ Fin d'execution.
 
 ```
 ## Structure du projet
----
+
 minishell/
-    - main.c             # Boucle principale, lecture des commandes
-    - parse.c            # Fonction de découpage de la ligne en tokens
-    - commande_interne.c # Gestion des commandes internes (cd, exit)
-    - run_commande.c     # Exécution des commandes externes (fork + exec)
-    - shell.h            # Déclarations des fonctions et constantes
+- main.c             # Boucle principale, lecture des commandes
+- parse.c            # Fonction de découpage de la ligne en tokens
+- commande_interne.c # Gestion des commandes internes (cd, exit)
+- run_commande.c     # Exécution des commandes externes (fork + exec)
+- shell.h            # Déclarations des fonctions et constantes
+
 ---
 
 ## Compilation
 
 gcc -Wall -Wextra -o minishell main.c parse.c commande_interne.c run_commande.c
 
+---
+
 ## Améliorations possibles
 
-Gestion des redirections < et > (entrée/sortie)
-Ajout d’un historique des commandes
-Ajout de commandes internes supplémentaires (ex : help, pwd, echo)
+- Gestion des redirections < et > (entrée/sortie)
+- Ajout d’un historique des commandes
+- Ajout de commandes internes supplémentaires (ex : help, pwd, echo)
 
+---
 
 ## Licence
 Ce projet est libre d’utilisation et de modification.
+
+---
 
 ## Auteur
 
