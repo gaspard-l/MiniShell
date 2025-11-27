@@ -1,6 +1,6 @@
 # MiniShell v1.0
 
-MiniShell est un terminal simple écrit en langage C, conçu pour démontrer la maîtrise des concepts système Unix : gestion des processus, parsing de commandes, commandes internes et externes.
+MiniShell est un shell simplifié écrit en C, qui permet d’exécuter des commandes Unix de base. Ce projet m’a aidé à comprendre la gestion des processus, le parsing des commandes et l’implémentation de commandes internes et externes.
 
 ---
 
@@ -39,27 +39,28 @@ Fin d'execution.
 ## Structure du projet
 
 minishell/
-├── main.c             # Boucle principale, prompt, lecture commandes
-├── parse.c            # Fonction de découpage de la ligne en tokens
-├── commande_interne.c # Gestion des commandes internes (cd, exit)
-├── run_commande.c     # Exécution des commandes externes (fork + exec)
-├── shell.h            # Déclarations des fonctions et constantes
+    - main.c             # Boucle principale, lecture des commandes
+    - parse.c            # Fonction de découpage de la ligne en tokens
+    - commande_interne.c # Gestion des commandes internes (cd, exit)
+    - run_commande.c     # Exécution des commandes externes (fork + exec)
+    - shell.h            # Déclarations des fonctions et constantes
 
 
-##Compilation
+## Compilation
 
 gcc -Wall -Wextra -o minishell main.c parse.c commande_interne.c run_commande.c
 
-##Améliorations possibles
+## Améliorations possibles
 
 Gestion des redirections < et > (entrée/sortie)
 Ajout d’un historique des commandes
 Ajout de commandes internes supplémentaires (ex : help, pwd, echo)
 
 
-##Licence
+## Licence
 Ce projet est libre d’utilisation et de modification.
 
-##Auteur
+## Auteur
 
 Gaspard Lesourd
+
